@@ -8,3 +8,6 @@ class Contact:
         if isinstance(other,Contact):
             return self.name == other.name
         return False
+
+    def __str__(self) -> str:
+        return self.name + "\t" + self.phone + "\t" + self.email + "\n"
